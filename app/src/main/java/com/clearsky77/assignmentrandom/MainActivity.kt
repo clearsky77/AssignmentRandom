@@ -3,6 +3,7 @@ package com.clearsky77.assignmentrandom
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,5 +31,12 @@ class MainActivity : AppCompatActivity() {
         for (num in randomNumArr) {
             Log.d("숫자", num.toString())
         }
+
+        txtNum1.text =randomNumArr.get(0).toString()
+        txtNum2.text =randomNumArr.get(1).toString()
+        txtNum3.text =randomNumArr.get(2).toString()
+        txtNum4.text =randomNumArr.get(3).toString()
+        txtNum5.text =randomNumArr.get(4).toString()
+        txtNum6.text =randomNumArr.get(5).toString()
     }
 }
